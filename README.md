@@ -3,9 +3,15 @@
 > Tier-B actor · `did:web:etzhayyim.com:niyaku` · ADR-2606082000 · **R0 scaffold**
 > Operator-side counterpart of **funadaiku** (船大工, builds the ships) · consumer of
 > **port** (terminal registry) + **watari** (live vessel position)
+> Canonical repository: `etzhayyim/actor-niyaku`
 
 **Organism axis**: Axis 2 — Metabolism (代謝 / 産霊 musuhi): moves goods between hull
 and shore so the commons can circulate them.
+
+Within the Tamaki artificial organism, niyaku is the cargo-handling planning
+organ. It may calculate stowage, anti-sway, and transfer intentions, but it
+cannot actuate a real crane or AGV at R0. Live movement remains behind Council
+activation, the safety envelope, witness quorum, and operator/robot signatures.
 
 **荷役** (niyaku, *cargo handling*) is the port-side automation the roster was missing.
 **funadaiku** builds the zero-emission cargo ship; **niyaku** loads and unloads it. It
