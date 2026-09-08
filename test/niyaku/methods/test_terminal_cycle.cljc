@@ -2,7 +2,7 @@
   "Tests for niyaku.methods.terminal-cycle — end-to-end vessel-discharge orchestration.
   1:1 Clojure port of methods/test_terminal_cycle.py (pytest → clojure.test)."
   (:require [clojure.test :refer [deftest is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [niyaku.methods.agv-transfer :as agv]
             [niyaku.methods.crane-dynamics :as cd]
             [niyaku.methods.stow-plan :as sp]

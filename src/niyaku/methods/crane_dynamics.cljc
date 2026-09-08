@@ -18,7 +18,7 @@
     theta : load swing angle from vertical (rad); theta>0 ⇒ load lags +x
     cable : hoist cable length from trolley to load CG (m)
   Equilibrium is the load hanging straight down (theta = 0) — the STABLE point."
-  (:require [clojure.string]))
+  (:require [kotoba.lang.text]))
 
 ;; ── GantryCrane (reduced-order single-pendulum-on-trolley model) ─────────────
 

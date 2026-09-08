@@ -14,7 +14,7 @@
   only for their host-neutral invariant (resolve-py-src returns a non-crashing
   path string)."
   (:require [clojure.test :refer [deftest is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [niyaku.methods.isaac-sway-sim :as sim]))
 
 (defn- approx? [a b]

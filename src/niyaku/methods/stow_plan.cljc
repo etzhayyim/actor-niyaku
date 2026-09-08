@@ -4,7 +4,7 @@
   1:1 Clojure port of `methods/stow_plan.py`.
 
   Pure Clojure (clojure.core only), no external deps. Portable .cljc."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (defn make-slot
   "A cell address. tier increases upward (0 = bottom)."

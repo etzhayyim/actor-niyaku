@@ -18,7 +18,7 @@
   isaac-gated tests skip exactly as the Python suite does.
 
   Portable .cljc. Host file/path probing behind #?(:clj …)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             #?(:clj [clojure.java.io :as io])))
 
 (def HANG Math/PI) ;; cartpole theta of a load hanging straight down (stable)

@@ -1,7 +1,7 @@
 (ns niyaku.cells.stowage-planning.state-machine
   "1:1 port of cells/stowage_planning/state_machine.py (ADR-2606082000). stowage_planning state machine — ADR-2606082000 (L1 compute bay/row/tier stow plan (weight/rotation/reefer/hazmat) + work sequence).
   R0 scaffold: phase transitions are structural placeholders; .solve() raises until Council Lv6+ ratifies ADR-2606082015."
-  (:require [clojure.string]))
+  (:require [kotoba.lang.text]))
 
 ;; CellState default (R0 0%-completion INIT record)
 (def cell-state-defaults
