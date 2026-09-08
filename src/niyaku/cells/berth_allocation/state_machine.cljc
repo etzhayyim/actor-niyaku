@@ -1,7 +1,7 @@
 (ns niyaku.cells.berth-allocation.state-machine
   "1:1 port of cells/berth_allocation/state_machine.py (ADR-2606082000). berth_allocation state machine — ADR-2606082000 (L0 assign an arriving vessel to a berth + STS crane window).
   R0 scaffold: phase transitions are structural placeholders; .solve() raises until Council Lv6+ ratifies ADR-2606082015."
-  (:require [clojure.string]))
+  (:require [kotoba.lang.text]))
 
 ;; CellState default (R0 0%-completion INIT record)
 (def cell-state-defaults

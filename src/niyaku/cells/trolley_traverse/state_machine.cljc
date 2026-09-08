@@ -1,7 +1,7 @@
 (ns niyaku.cells.trolley-traverse.state-machine
   "1:1 port of cells/trolley_traverse/state_machine.py (ADR-2606082000). trolley_traverse state machine — ADR-2606082000 (L4 anti-sway trolley traverse ship<->shore (crane_dynamics / Isaac-Sim verified)).
   R0 scaffold: phase transitions are structural placeholders; .solve() raises until Council Lv6+ ratifies ADR-2606082015."
-  (:require [clojure.string]))
+  (:require [kotoba.lang.text]))
 
 ;; CellState default (R0 0%-completion INIT record)
 (def cell-state-defaults

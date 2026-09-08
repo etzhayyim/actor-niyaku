@@ -1,7 +1,7 @@
 (ns niyaku.cells.emissions-audit.state-machine
   "1:1 port of cells/emissions_audit/state_machine.py (ADR-2606082000). emissions_audit state machine — ADR-2606082000 (cross-cutting electric-crane energy + regenerative-recovery audit).
   R0 scaffold: phase transitions are structural placeholders; .solve() raises until Council Lv6+ ratifies ADR-2606082015."
-  (:require [clojure.string]))
+  (:require [kotoba.lang.text]))
 
 ;; CellState default (R0 0%-completion INIT record)
 (def cell-state-defaults

@@ -1,7 +1,7 @@
 (ns niyaku.cells.spreader-engagement.state-machine
   "1:1 port of cells/spreader_engagement/state_machine.py (ADR-2606082000). spreader_engagement state machine — ADR-2606082000 (L2 align + engage the twistlock spreader on the target container).
   R0 scaffold: phase transitions are structural placeholders; .solve() raises until Council Lv6+ ratifies ADR-2606082015."
-  (:require [clojure.string]))
+  (:require [kotoba.lang.text]))
 
 ;; CellState default (R0 0%-completion INIT record)
 (def cell-state-defaults

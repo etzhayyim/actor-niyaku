@@ -1,7 +1,7 @@
 (ns niyaku.cells.sts-hoist-cycle.state-machine
   "1:1 port of cells/sts_hoist_cycle/state_machine.py (ADR-2606082000). sts_hoist_cycle state machine — ADR-2606082000 (L3 ship-to-shore hoist: raise the box clear of the cell guides).
   R0 scaffold: phase transitions are structural placeholders; .solve() raises until Council Lv6+ ratifies ADR-2606082015."
-  (:require [clojure.string]))
+  (:require [kotoba.lang.text]))
 
 ;; CellState default (R0 0%-completion INIT record)
 (def cell-state-defaults

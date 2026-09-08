@@ -1,7 +1,7 @@
 (ns niyaku.cells.manifest-attestation.state-machine
   "1:1 port of cells/manifest_attestation/state_machine.py (ADR-2606082000). manifest_attestation state machine — ADR-2606082000 (terminal per-move kotoba EAVT anchor + open move registry).
   R0 scaffold: phase transitions are structural placeholders; .solve() raises until Council Lv6+ ratifies ADR-2606082015."
-  (:require [clojure.string]))
+  (:require [kotoba.lang.text]))
 
 ;; CellState default (R0 0%-completion INIT record)
 (def cell-state-defaults

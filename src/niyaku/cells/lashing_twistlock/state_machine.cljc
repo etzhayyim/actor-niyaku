@@ -1,7 +1,7 @@
 (ns niyaku.cells.lashing-twistlock.state-machine
   "1:1 port of cells/lashing_twistlock/state_machine.py (ADR-2606082000). lashing_twistlock state machine — ADR-2606082000 (L6 secure/lash the loaded box for sea passage).
   R0 scaffold: phase transitions are structural placeholders; .solve() raises until Council Lv6+ ratifies ADR-2606082015."
-  (:require [clojure.string]))
+  (:require [kotoba.lang.text]))
 
 ;; CellState default (R0 0%-completion INIT record)
 (def cell-state-defaults
