@@ -37,7 +37,7 @@ through the clean-room `isaacsim.core.api` (`kotodama.nv_compat`, ADR-2605261800
 
 ## Running tests
 
-Run `bb test` from the repository root. Python parity oracles are retired; CLJC
+Run `kbb -M:test` from the repository root. Python parity oracles are retired; CLJC
 is the canonical implementation and the suite is offline and deterministic.
 
 ## Anti-sway sign conventions (don't flip these without re-deriving)
