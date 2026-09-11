@@ -59,7 +59,7 @@ absent the Isaac tests skip and the rest stay green.
 `lashing_twistlock` (L6) → `manifest_attestation` (terminal), with `emissions_audit`
 cross-cutting. R0 = scaffold; every cell is import-clean but `.solve()` raises
 `RuntimeError` until Council Lv6+ ratifies R1 (ADR-2606082015, reserved). The
-CLJC state-machine transitions are covered by `test/niyaku/cells/test_state_machine.cljc`.
+CLJC state-machine transitions are covered by `test/niyaku/cells/test_state_machine.cljk`.
 
 ## Constitutional gates (R0)
 
