@@ -46,7 +46,7 @@ anti-sway feedback     →  trolley reaches the slot, residual sway < 0.01 rad
 | `agv_transfer.cljc` | AGV travel profile, conflict check, and dispatch |
 | `terminal_cycle.cljc` | end-to-end stow, crane, and AGV orchestration |
 
-Run the complete standalone suite with `bb test`.
+Run the complete standalone suite with `kbb -M:test`.
 
 The Cartpole↔crane mapping is the *clean-room* Isaac surface (`kotodama.nv_compat`,
 ADR-2605261800): no NVIDIA binary/header/library is linked. When the kotoba submodule is
