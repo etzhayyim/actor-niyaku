@@ -13,7 +13,7 @@
   reproducible in clojure.test without host-specific shims, so they are exercised
   only for their host-neutral invariant (resolve-py-src returns a non-crashing
   path string)."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [kotoba.lang.text :as str]
             [niyaku.methods.isaac-sway-sim :as sim]))
 

@@ -1,6 +1,6 @@
 (ns niyaku.methods.test-stow-plan
   "Tests for niyaku.methods.stow-plan."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [niyaku.methods.stow-plan :as sp]))
 
 (defn- rot-index [rotation]
