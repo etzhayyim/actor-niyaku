@@ -1,5 +1,5 @@
 (ns niyaku.repository-contract-test
-  (:require [clojure.edn :as edn] [kotoba.test :refer [deftest is]]))
+  (:require [kotoba.lang.edn :as edn] [kotoba.test :refer [deftest is]]))
 (deftest canonical-files-parse
   (doseq [p ["manifest.edn" "schema.edn" "data/terminal.edn"
              "lex/moveAttestation.edn" "identity.edn" "dependencies.edn"
