@@ -1,7 +1,7 @@
 (ns niyaku.methods.test-agv-transfer
   "Tests for niyaku.methods.agv-transfer — AGV horizontal-transport planning core.
   1:1 Clojure port of methods/test_agv_transfer.py (pytest → clojure.test)."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [niyaku.methods.agv-transfer :as agv]))
 
 (defn- approx?

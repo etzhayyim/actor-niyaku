@@ -1,7 +1,7 @@
 (ns niyaku.methods.test-crane-dynamics
   "Tests for niyaku.methods.crane-dynamics — gantry anti-sway physics core.
   1:1 Clojure port of methods/test_crane_dynamics.py (pytest → clojure.test)."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [niyaku.methods.crane-dynamics :as cd]))
 
 (defn- approx?
