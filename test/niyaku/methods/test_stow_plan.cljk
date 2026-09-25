@@ -1,6 +1,6 @@
 (ns niyaku.methods.test-stow-plan
   "Tests for niyaku.methods.stow-plan."
-  (:require [kotoba.test :refer [deftest is testing]]
+  (:require [kotoba.lang.error :as kerror] [kotoba.test :refer [deftest is testing]]
             [niyaku.methods.stow-plan :as sp]))
 
 (defn- rot-index [rotation]
@@ -28,7 +28,7 @@
 (deftest test-capacity-exceeded-raises
   (let [rotation ["P1"]
         boxes (for [i (range 5)] (sp/make-container (str "b" i) 10.0 "P1"))]
-    (is (thrown? clojure.lang.ExceptionInfo
+    (is (thrown? kerror/ExceptionInfo
                  (sp/build-stow-plan boxes rotation 1 1 4)))))
 
 (deftest test-reefer-only-in-reefer-rows
@@ -40,7 +40,7 @@
 (deftest test-reefer-infeasible-when-no-reefer-row
   (let [rotation ["P1"]
         boxes [(sp/make-container "r" 10.0 "P1" true)]]
-    (is (thrown? clojure.lang.ExceptionInfo
+    (is (thrown? kerror/ExceptionInfo
                  (sp/build-stow-plan boxes rotation 1 1 1 :reefer-rows [])))))
 
 (deftest test-hazmat-segregation-separates-classes
@@ -51,15 +51,15 @@
         plan (sp/build-stow-plan boxes rotation 2 1 2)]
     (is (not= [(:bay (sp/slot-of plan "flam")) (:row (sp/slot-of plan "flam"))]
               [(:bay (sp/slot-of plan "oxid")) (:row (sp/slot-of plan "oxid"))]))
-    (is (thrown? clojure.lang.ExceptionInfo
+    (is (thrown? kerror/ExceptionInfo
                  (sp/build-stow-plan boxes rotation 1 1 2)))))
 
 (deftest test-unknown-port-raises
-  (is (thrown? clojure.lang.ExceptionInfo
+  (is (thrown? kerror/ExceptionInfo
                (sp/build-stow-plan [(sp/make-container "x" 1.0 "ZZZ")] ["P1"] 1 1 1))))
 
 (deftest test-empty-rotation-raises
-  (is (thrown? clojure.lang.ExceptionInfo
+  (is (thrown? kerror/ExceptionInfo
                (sp/build-stow-plan [] [] 1 1 1))))
 
 (deftest test-discharge-sequence-top-first
